@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yanbo Zhai's Tech Blog</title>
+    <title>Yanbo Zhai's Tech Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
+            padding-top: 50px;
         }
         .header {
             background: #333;
             color: #fff;
             padding: 10px 20px;
             text-align: center;
-        }
-        .content {
-            padding: 20px;
+            margin-bottom: 30px;
         }
         .section {
             background: #fff;
@@ -27,53 +23,40 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .section h2 {
-            margin-top: 0;
-        }
-        .section p, .section ul {
-            line-height: 1.6;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: #fff;
-        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Yanbo Zhai's SDE Job Search Journey</h1>
-    </div>
-    <div class="content">
-        <!-- Education Section -->
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>University of Michigan–Ann Arbor</strong><br>
-            B.S. in Computer Science, Expected: Dec. 2024<br>
-            Relevant Coursework: Data Structures and Algorithms, C++, Python, Ethics and Emerging Technologies</p>
-        </div>
-        
-        <!-- Experience Section -->
-        <div class="section">
-            <h2>Experience</h2>
-            <h3>Research Assistant, University of Michigan–Ann Arbor</h3>
-            <p>Jan. 2024 – Present. Documented and organized laboratory records, created and implemented R scripts for data analysis.</p>
-            <h3>Teaching Assistant, University of Michigan–Ann Arbor</h3>
-            <p>Jan. 2023 – May. 2023. Graded assignments, led review sessions, and deconstructed complex concepts for students.</p>
+    <div class="container">
+        <div class="header">
+            <h1>Yanbo Zhai's SDE Job Search Journey</h1>
         </div>
 
         <!-- Projects Section -->
         <div class="section">
             <h2>Projects</h2>
-            <h3>Customized Redis</h3>
-            <p>A light-weight version of a memory cache implementation. Optimized performance through threading and asynchronous tasks.</p>
-            <h3>Modernized Bank Microservices</h3>
-            <p>Designed backend API for office hour queuing web services, implementing efficient data structures.</p>
-            <h3>Fullstack Online Bookstore Web App</h3>
-            <p>Developed a full-stack MERN web app, crafted responsive React components for the frontend.</p>
-            <h3>Enchant Rydes</h3>
-            <p>AWS Serverless full-stack application for unicorn ride requests, deployed with AWS API Gateway.</p>
+            <div class="card-deck">
+                <!-- Project 1 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Customized Redis</h3>
+                        <p class="card-text">A light-weight in-memory cache optimized for performance with C/C++.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Modernized Bank Microservices</h3>
+                        <p class="card-text">Backend API for queuing services, using C++ and RESTful principles.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Fullstack Online Bookstore</h3>
+                        <p class="card-text">A MERN stack web application providing CRUD operations for books.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Skills Section -->
@@ -81,9 +64,16 @@
             <h2>Skills</h2>
             <p>Languages and Tools: C, C++, Python, JavaScript, HTML, CSS, MySQL, SPSS, Qualtrics, Zotero</p>
         </div>
+
+        <!-- Footer -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>Contact me at <a href="mailto:zhaiyanb@umich.edu">zhaiyanb@umich.edu</a></p>
+        </div>
     </div>
-    <div class="footer">
-        <p>Contact me at <a href="mailto:zhaiyanb@umich.edu" style="color: #fff;">zhaiyanb@umich.edu</a></p>
-    </div>
+
+    <!-- Bootstrap JS and its dependencies (Popper.js and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
