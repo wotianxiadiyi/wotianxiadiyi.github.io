@@ -8,10 +8,10 @@
     <style>
         body {
             padding-top: 50px;
-            background: #f4f4f4; 
+            background: #f4f4f4; /* Simplified background color */
         }
         .header {
-            background: #283593; 
+            background: #283593; /* Deep blue background */
             color: #fff;
             padding: 10px 20px;
             text-align: center;
@@ -23,9 +23,20 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .card {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transform: scale(1.05);
         }
         .logo {
-            height: 40px; /* Adjust size as necessary */
+            height: 24px; /* Adjust size as necessary */
             vertical-align: middle;
         }
         .education-title {
